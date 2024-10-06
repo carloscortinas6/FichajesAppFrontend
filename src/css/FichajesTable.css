@@ -1,0 +1,94 @@
+/* Contenedor de la tabla */
+.containertable {
+    overflow-x: auto; /* Habilita el scroll horizontal */
+    width: 100%; /* Se asegura de que ocupa el 100% del ancho disponible */
+}
+
+/* Estilo general del componente */
+table {
+    width: auto; /* Cambia a auto para que la tabla se ajuste a su contenido */
+    border-collapse: collapse;
+    table-layout: auto; /* Las columnas se ajustan según el contenido */
+}
+
+/* Estilo para las cabeceras (th) */
+th {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilo para las filas de datos (tbody) */
+tbody tr {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilo para los botones y los inputs */
+input[type="time"], button {
+    padding: 5px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin-right: 5px; /* Margen derecho entre botones */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+    background-color: #4CAF50; /* Fondo verde para los botones */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+button:hover {
+    background-color: #45a049; /* Fondo más oscuro al pasar el cursor */
+}
+
+/* Estilo para la fila al editar */
+input[type="time"] {
+    border: 1px solid #ddd; /* Borde gris claro */
+}
+
+/* Alineación vertical y horizontal al centro */
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Asegura que la tabla esté en la parte superior del contenedor */
+.content {
+    margin-top: 40px; /* Ajusta el margen superior si es necesario */
+}
+
+
+/* Estilo para los botones en la sección de edición */
+.editbuttons button {
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    padding: 3px 8px; /* Menos espaciado interno */
+    margin-right: 5px; /* Margen derecho entre botones */
+    border-radius: 4px; /* Bordes redondeados */
+    background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+    color: black; /* Texto negro */
+    border: 1px solid #ddd; /* Borde gris claro */
+    font-weight: bold;
+}
+
+.editbuttons button:hover {
+    background-color: #ddd; /* Fondo más claro al pasar el cursor */
+}
+
+input{
+    font-weight: bold;
+}
+
+/* Ocultar la columna "Usuario" en pantallas pequeñas */
+@media (max-width: 768px) { /* Cambia el valor según el tamaño en el que quieras aplicar el cambio */
+    .user-column {
+        display: none; /* Oculta la columna */
+    }
+}
+
+

@@ -1,0 +1,55 @@
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    border-bottom: 1px solid #f49e70;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Hace que la barra ocupe todo el ancho */
+    max-width: 100%; /* Evita limitar el ancho en pantallas pequeñas */
+}
+
+
+.navbar-custom .navbar-brand {
+    color: black; /* Color de texto negro para la marca */
+    font-size: 24px; /* Tamaño de fuente para la marca */
+    font-weight: bold; /* Negrita para la marca */
+}
+
+.navbar-custom .navbar-nav {
+    display: flex; /* Usa Flexbox para los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    flex-grow: 1; /* Permite que los enlaces ocupen el espacio disponible */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: black; /* Color de texto negro para los enlaces */
+    font-size: 17px; /* Tamaño de fuente para los enlaces */
+    padding: 20px 25px; /* Espaciado alrededor del texto */
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido al hacer hover */
+    border-radius: 5px; /* Bordes redondeados en el efecto hover */
+}
+
+.navbar-custom .navbar-collapse {
+    justify-content: center; /* Centra el contenido dentro del contenedor de la navegación */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.navbar {
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+.navbar-toggler {
+    border-color: #f49e70; /* Color personalizado del borde del botón */
+}
+
+.navbar-toggler-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el color del ícono */
+}
+

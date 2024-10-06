@@ -1,0 +1,97 @@
+.user-searcher {
+    display: flex; /* Coloca todos los elementos en la misma fila */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    margin-top: 20px; /* Margen superior para separar del contenido superior */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1050px) {
+    .user-searcher {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .user-info, .user-period-wrapper, .boton-reporte-container {
+        width: 40%; /* Hace que cada elemento ocupe todo el ancho disponible */
+        margin-bottom: 10px; /* Añade margen entre los elementos */
+        margin-top: 10px;
+    }
+}
+
+.user-info {
+    background: rgba(255, 255, 255, 0.3);
+    padding-left: 10px; /* Solo padding a la izquierda para separar el texto */
+    border-radius: 5px;
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 40px; /* Ajusta la altura del contenedor para igualar la altura del Select */
+}
+
+/* Estilo del contenedor de UserPeriod */
+.user-period-wrapper {
+    display: flex; /* Flexbox para alinear el contenido */
+    align-items: center; /* Alinea el contenido verticalmente al centro */
+    height: 40px; /* Asegura que la altura coincida con la del Select */
+}
+
+/* Aplica estilo a las opciones del select */
+.select__option {
+    color: black !important; /* Color del texto negro */
+    font-weight: bold !important; /* Texto en negrita */
+}
+
+.select__single-value {
+    color: black !important; /* Asegura que el valor seleccionado sea negro */
+    font-weight: bold !important; /* Asegura que el valor seleccionado esté en negrita */
+}
+
+/* Ajusta el estilo del control del select */
+.select__control {
+    margin-left: 3px;
+    width: 100%;
+    min-width: 200px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    height: 40px; /* Asegura que tenga la misma altura que el contenedor */
+}
+
+/* Ajusta el contenedor del valor del select */
+.select__value-container {
+    padding: 0;
+}
+
+/* Oculta el indicador de la flecha desplegable */
+.select__indicators {
+    display: none;
+}
+
+/* Oculta la barra separadora entre el input y la flecha */
+.select__indicator-separator {
+    display: none;
+}
+
+/* Estilo para centrar el BotonReporte */
+.boton-reporte-container {
+    display: flex;
+    align-items: center; /* Alinea el botón verticalmente */
+    justify-content: center; /* Centra el botón horizontalmente */
+    height: 40px; /* Asegura que el BotonReporte tenga la misma altura */
+}
+
+.boton-reporte-container button {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}

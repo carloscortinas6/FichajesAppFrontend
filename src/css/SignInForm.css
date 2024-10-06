@@ -1,0 +1,30 @@
+.card {
+    width: 100%; /* Hace que la tarjeta ocupe todo el ancho disponible */
+    max-width: 300px; /* Mantiene el ancho máximo en pantallas más grandes */
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin: 0;
+}
+
+
+
+.form-control {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ced4da; /* Añadir un borde ligero */
+    padding: 10px 15px; /* Aumenta el padding para hacerlo más "touch-friendly" */
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.custom-title {
+    font-size: 1.5rem; /* Ajusta el tamaño del texto a 1.5 veces el tamaño de fuente raíz */
+    font-weight: bold; /* Aplica fuente en negrita */
+}

@@ -1,0 +1,48 @@
+/* Centrar el contenedor principal horizontalmente */
+.welcome-message {
+    text-align: center; /* Centrar el texto del mensaje de bienvenida */
+    margin-bottom: 20px; /* Añadir espacio debajo del mensaje de bienvenida */
+}
+
+.content-fichaje {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%; /* Cambia a un porcentaje para que se ajuste automáticamente */
+    max-width: 400px; /* Establece un ancho máximo para evitar que sea demasiado grande */
+    height: auto; /* Cambia a auto para permitir que la altura se ajuste al contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto; /* Centramos el contenido horizontalmente */
+    margin-top: 30px;
+}
+
+/* Estilo del tiempo */
+.content-fichaje .time {
+    font-size: 48px;
+    color: #333;
+}
+
+/* Estilo de la fecha */
+.content-fichaje .date {
+    font-size: 24px;
+    color: #333;
+}
+
+.content-fichaje .titulo{
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilo del botón */
+.content-fichaje button {
+    background: #ff7e67;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px; /* Añadir margen inferior al botón */
+}
